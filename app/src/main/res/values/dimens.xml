@@ -10,5 +10,10 @@
     <dimen name="textMargin">16dp</dimen>
     <dimen name="titleMarginTop">16dp</dimen>
     <dimen name="imageMargin">16dp</dimen>
+    <dimen name="buttonMargin">16dp</dimen>
+    <dimen name="recyclerMarginTop">22dp</dimen>
+    <dimen name="recyclerMarginBottom">22dp</dimen>
+    <dimen name="recyclerMarginStart">16dp</dimen>
+    <dimen name="recyclerMarginEnd">16dp</dimen>
 
 </resources>
