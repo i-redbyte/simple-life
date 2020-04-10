@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cellHeight"
+    android:layout_marginStart="@dimen/recyclerMarginStart"
+    android:layout_marginEnd="@dimen/recyclerMarginEnd"
+    android:layout_marginBottom="@dimen/indentBetweenCells"
+    app:cardCornerRadius="@dimen/cellRadius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/colorMintGreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/vCircle"
+            android:layout_width="@dimen/circleRadius"
+            android:layout_height="@dimen/circleRadius"
+            android:layout_marginStart="@dimen/imageMargin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/circle_dead" />
+
+        <ImageView
+            android:id="@+id/ivState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_skull"
+            app:layout_constraintBottom_toBottomOf="@id/vCircle"
+            app:layout_constraintEnd_toEndOf="@id/vCircle"
+            app:layout_constraintStart_toStartOf="@id/vCircle"
+            app:layout_constraintTop_toTopOf="@id/vCircle" />
+
+        <TextView
+            android:id="@+id/tvCellTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/titleMarginStart"
+            android:layout_marginTop="@dimen/titleMarginTop"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/cellTitleSize"
+            app:layout_constraintStart_toEndOf="@+id/vCircle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/cell_dead_title" />
+
+        <TextView
+            android:id="@+id/tvCellSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/subtitleMarginStart"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/cellSubtitleSize"
+            app:layout_constraintStart_toEndOf="@+id/vCircle"
+            app:layout_constraintTop_toBottomOf="@+id/ivState"
+            tools:text="@string/cell_dead_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

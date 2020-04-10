@@ -5,15 +5,20 @@
     <dimen name="cellSubtitleSize">14sp</dimen>
     <dimen name="buttonCornerRadius">4dp</dimen>
     <dimen name="buttonHeight">36dp</dimen>
-    <dimen name="cellHeight">36dp</dimen>
+    <dimen name="cellHeight">72dp</dimen>
     <dimen name="indentBetweenCells">4dp</dimen>
     <dimen name="textMargin">16dp</dimen>
     <dimen name="titleMarginTop">16dp</dimen>
+    <dimen name="subtitleMarginTop">8dp</dimen>
+    <dimen name="subtitleMarginStart">16dp</dimen>
+    <dimen name="titleMarginStart">16dp</dimen>
     <dimen name="imageMargin">16dp</dimen>
     <dimen name="buttonMargin">16dp</dimen>
     <dimen name="recyclerMarginTop">22dp</dimen>
     <dimen name="recyclerMarginBottom">22dp</dimen>
     <dimen name="recyclerMarginStart">16dp</dimen>
     <dimen name="recyclerMarginEnd">16dp</dimen>
+    <dimen name="circleRadius">40dp</dimen>
+    <dimen name="cellRadius">18dp</dimen>
 
 </resources>

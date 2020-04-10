@@ -31,6 +31,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
     def adapterDelegates = "3.1.0"
     implementation "com.hannesdorfmann:adapterdelegates3:$adapterDelegates"
     def glideVersion = "4.10.0"
