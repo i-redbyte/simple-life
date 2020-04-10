@@ -1,6 +1,6 @@
 package org.redbyte.simplelife.life
 
-import redbyte.pikabu.base.BasePresenter
+import org.redbyte.simplelife.base.BasePresenter
 
 class LifePresenter constructor() : BasePresenter<LifeContract.View>(),
     LifeContract.Presenter {

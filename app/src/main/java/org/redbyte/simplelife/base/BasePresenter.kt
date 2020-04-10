@@ -1,4 +1,4 @@
-package redbyte.pikabu.base
+package org.redbyte.simplelife.base
 
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable

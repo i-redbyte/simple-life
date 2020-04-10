@@ -1,6 +1,6 @@
 package org.redbyte.simplelife.life
 
-import redbyte.pikabu.base.BaseContract
+import org.redbyte.simplelife.base.BaseContract
 
 interface LifeContract {
     interface View : BaseContract.View {

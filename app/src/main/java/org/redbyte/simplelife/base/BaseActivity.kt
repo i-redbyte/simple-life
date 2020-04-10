@@ -1,4 +1,4 @@
-package redbyte.pikabu.base
+package org.redbyte.simplelife.base
 
 import androidx.appcompat.app.AppCompatActivity
 import javax.inject.Inject

@@ -1,4 +1,4 @@
-package redbyte.pikabu.base
+package org.redbyte.simplelife.base
 
 interface BaseContract {
 
