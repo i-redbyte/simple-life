@@ -1,7 +1,7 @@
-package org.redbyte.simplelife.di.scoups
+package org.redbyte.simplelife.di.scopes
 
 import javax.inject.Scope
 
 @Scope
 @Retention(AnnotationRetention.RUNTIME)
-annotation class LifeScreen
+annotation class LifeScope

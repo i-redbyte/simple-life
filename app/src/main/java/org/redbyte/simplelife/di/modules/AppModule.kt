@@ -4,7 +4,7 @@ import android.app.Application
 import dagger.Module
 import dagger.Provides
 import org.redbyte.App
-import org.redbyte.simplelife.di.scoups.PerApplication
+import org.redbyte.simplelife.di.scopes.PerApplication
 import javax.inject.Singleton
 
 @Module

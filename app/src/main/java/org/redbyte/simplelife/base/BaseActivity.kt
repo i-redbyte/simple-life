@@ -3,9 +3,7 @@ package org.redbyte.simplelife.base
 import androidx.appcompat.app.AppCompatActivity
 import javax.inject.Inject
 
-abstract class BaseActivity<P : BaseContract.Presenter> :
-    AppCompatActivity(),
-    BaseContract.View {
+abstract class BaseActivity<P : BaseContract.Presenter> : AppCompatActivity(), BaseContract.View {
 
     @Inject
     lateinit var presenter: P

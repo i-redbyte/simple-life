@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Клеточное наполнение</string>
-    <string name="cell_life_title">Живая</string>
-    <string name="cell_life_subtitle">и шевелится!</string>
-    <string name="cell_lively_title">Жизнь</string>
-    <string name="cell_lively_subtitle">Ку-ку!</string>
+    <string name="cell_life_title">Жизнь</string>
+    <string name="cell_life_subtitle">Ку-ку!</string>
+    <string name="cell_lively_title">Живая</string>
+    <string name="cell_lively_subtitle">и шевелится!</string>
     <string name="cell_dead_title">Мертвая</string>
     <string name="cell_dead_subtitle">или прикидывается</string>
     <string name="button_create">Сотворить</string>

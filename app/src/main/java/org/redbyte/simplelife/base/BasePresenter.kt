@@ -7,10 +7,6 @@ import javax.inject.Inject
 abstract class BasePresenter<V : BaseContract.View> : BaseContract.Presenter {
     protected var disposables = CompositeDisposable()
 
-    @Inject
-    lateinit var view: V
-
-
     operator fun CompositeDisposable.plusAssign(disposable: Disposable) {
         disposables.add(disposable)
     }

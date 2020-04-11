@@ -1,12 +1,18 @@
 package org.redbyte.simplelife.di
 
-import dagger.Component
-import org.redbyte.simplelife.life.LifeActivity
+import dagger.Subcomponent
 import org.redbyte.simplelife.di.modules.LifeModule
-import org.redbyte.simplelife.di.scoups.LifeScreen
+import org.redbyte.simplelife.di.scopes.LifeScope
+import org.redbyte.simplelife.presentation.life.LifeActivity
 
-@LifeScreen
-@Component(modules = [LifeModule::class])
+@LifeScope
+@Subcomponent(modules = [LifeModule::class])
 interface LifeComponent {
-    fun inject(activity: LifeActivity)
+
+    @Subcomponent.Builder
+    interface Builder {
+        fun build(): LifeComponent
+    }
+
+    fun inject(lifeActivity: LifeActivity)
 }

@@ -1,23 +1,21 @@
 package org.redbyte.simplelife.di.modules
 
-import android.app.Activity
-import androidx.appcompat.app.AppCompatActivity
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
-import org.redbyte.simplelife.life.LifeContract
-import org.redbyte.simplelife.life.LifePresenter
+import org.redbyte.simplelife.di.scopes.LifeScope
+import org.redbyte.simplelife.presentation.life.LifeActivity
+import org.redbyte.simplelife.presentation.life.LifeContract
+import org.redbyte.simplelife.presentation.life.LifePresenter
 
 @Module
-class LifeModule(private var activity: AppCompatActivity) {
+interface LifeModule {
 
-    @Provides
-    fun provideActivity(): AppCompatActivity {
-        return activity
-    }
+//    @LifeScope
+//    @Binds
+//    fun view(view: LifeActivity): LifeContract.View
 
-    @Provides
-    fun providePresenter(): LifeContract.Presenter {
-        return LifePresenter()
-    }
+    @LifeScope
+    @Binds
+    fun presenter(presenter: LifePresenter): LifeContract.Presenter
 
 }
