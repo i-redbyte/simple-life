@@ -11,6 +11,7 @@ import org.redbyte.simplelife.R
 import org.redbyte.simplelife.base.BaseActivity
 import org.redbyte.simplelife.base.DelegationAdapter
 import org.redbyte.simplelife.model.Cell
+import org.redbyte.simplelife.presentation.author.AuthorActivity
 
 class LifeActivity : BaseActivity<LifeContract.Presenter>(), LifeContract.View {
     private lateinit var adapter: DelegationAdapter
@@ -41,6 +42,7 @@ class LifeActivity : BaseActivity<LifeContract.Presenter>(), LifeContract.View {
         btnCreate.setOnClickListener {
             presenter.generateCell()
         }
+        ivInfo.setOnClickListener { startActivity(AuthorActivity.openScreen(this)) }
         setupRecyclerView()
     }
 

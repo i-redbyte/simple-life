@@ -6,5 +6,9 @@
     <string name="cell_lively_subtitle">и шевелится!</string>
     <string name="cell_dead_title">Мертвая</string>
     <string name="cell_dead_subtitle">или прикидывается</string>
-    <string name="button_create">Сотворить</string>
+    <string name="life_button_create">Сотворить</string>
+    <string name="author_full_name">Соколов Илья Александрович</string>
+    <string name="author_bio">- Родился 06.08.1990\n- Программированием увлекся в школе.\n- Работать программистом стал с 2011 года.\n- Программирую под android с 2015. </string>
+    <string name="author_telegram">@red_byte</string>
+    <string name="author_email">developer.sokolov@gmail.com</string>
 </resources>

@@ -13,4 +13,6 @@ interface AppComponent {
 
     fun lifeComponentBuilder(): LifeComponent.Builder
 
+    fun authorComponentBuilder(): AuthorComponent.Builder
+
 }
