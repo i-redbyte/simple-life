@@ -11,6 +11,6 @@ interface LifeContract {
     }
 
     interface Presenter : BaseContract.Presenter {
-
+            fun generateCell()
     }
 }

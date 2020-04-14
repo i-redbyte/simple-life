@@ -14,11 +14,15 @@ class LifePresenter @Inject constructor(
 ) : BasePresenter<LifeContract.View>(), LifeContract.Presenter {
     lateinit var view: LifeContract.View
 
+
     override fun start() {
+    }
+
+    override fun generateCell() {
         disposables += generateCell.execute(UseCase.None)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({ view.addCell(it) }) { view.showError(it.message ?: "") }
+            .subscribe({ view.addCell(it) }) { view.showError(it.message ?: "${this.javaClass.simpleName} failed: generate cell") }
     }
 
 }
