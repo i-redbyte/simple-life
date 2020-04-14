@@ -10,5 +10,8 @@
     <string name="author_full_name">Соколов Илья Александрович</string>
     <string name="author_bio">- Родился 06.08.1990\n- Программированием увлекся в школе.\n- Работать программистом стал с 2011 года.\n- Программирую под android с 2015. </string>
     <string name="author_telegram">@red_byte</string>
+    <string name="author_whatsapp">+79530975476</string>
     <string name="author_email">developer.sokolov@gmail.com</string>
+    <string name="author_email_subject">Тестовое задание LIVE</string>
+    <string name="author_error_open_app">Ошибка при открытии %1$s</string>
 </resources>

@@ -14,7 +14,7 @@ import javax.inject.Inject
 class LifePresenter @Inject constructor(
     private val generateCell: GenerateCell
 ) : BasePresenter<LifeContract.View>(), LifeContract.Presenter {
-    lateinit var view: LifeContract.View
+    override  lateinit var view: LifeContract.View
 
     override fun start() = Unit
 

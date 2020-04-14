@@ -12,6 +12,7 @@ interface LifeContract {
     }
 
     interface Presenter : BaseContract.Presenter {
+        var view: View
         fun generateCell()
         fun checkCell(cells: List<Cell>)
     }
