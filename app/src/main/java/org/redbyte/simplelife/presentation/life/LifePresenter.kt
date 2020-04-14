@@ -30,7 +30,7 @@ class LifePresenter @Inject constructor(
     }
 
     override fun checkCell(list: List<Cell>) {
-        if (list.size < 3) return
+        if (list.size < CRITICAL_MASS + 1) return
         val cells: MutableList<Cell> = list.toMutableList()
         val n = cells.size - 1
         var livingCellsCount = 0
