@@ -1,6 +1,10 @@
 package org.redbyte.simplelife.model
 
-class Cell(val type: Type)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+class Cell(val type: Type) : Parcelable
 
 enum class Type {
     DEAD,
