@@ -1,6 +1,6 @@
 package org.redbyte.simplelife.model
 
-class Cell(type: Type)
+class Cell(val type: Type)
 
 enum class Type {
     DEAD,

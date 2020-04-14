@@ -13,12 +13,16 @@ import kotlin.random.Random
 class GenerateCell @Inject constructor() : SingleUseCase<Cell, None>() {
 
     override fun execute(params: None): Single<Cell> {
-        return Single.just(Cell(type = randomEnum(Type::class.java)))
+        return Single.just(Cell(randomCell()))
     }
 
-    fun <T : Enum<*>?> randomEnum(clazz: Class<T>): T {
+    // TODO: Red_byte 2020-04-14 For test generation
+    private fun <T : Enum<*>?> randomEnumCell(clazz: Class<T>): T {
         val x: Int = Random.nextInt(clazz.enumConstants?.size ?: 0)
         return clazz.enumConstants?.get(x) ?: throw RuntimeException()
     }
 
+    private fun randomCell(): Type =
+        if (Random.nextInt(100) and 1 == 0) Type.DEAD
+        else Type.LIVELY
 }
