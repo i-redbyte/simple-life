@@ -10,15 +10,12 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-
         instance = this
         setupDagger()
-
     }
 
     private fun setupDagger() {
         component = DaggerAppComponent.builder()
-//            .appModule(AppModule(this))
             .build()
         component.inject(this)
     }

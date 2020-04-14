@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--Color naming get of http://chir.ag/projects/name-that-color/-->
+    <!-- Color naming get of http://chir.ag/projects/name-that-color/ -->
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">@color/colorBossanova</color>
     <color name="colorAccent">#D81B60</color>
@@ -9,10 +9,10 @@
     <color name="colorCottonCandy">#FFB0E9</color>
     <color name="colorSelectiveYellow">#FFB800</color>
     <color name="colorButtermilk">#FFF7B0</color>
-    <color name="colorAttol">#0D658A</color>
     <color name="colorAtoll">#0D658A</color>
     <color name="colorMintGreen">#B0FFB4</color>
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorMalibu">#68ECFD</color>
 
 </resources>
