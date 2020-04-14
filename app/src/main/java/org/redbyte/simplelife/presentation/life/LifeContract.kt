@@ -6,11 +6,13 @@ import org.redbyte.simplelife.model.Cell
 interface LifeContract {
 
     interface View : BaseContract.View {
-        fun addCell(cell: Cell)
+        fun addCellAndCheck(cell: Cell)
+        fun showCells(cells: List<Cell>)
         fun showError(message: String)
     }
 
     interface Presenter : BaseContract.Presenter {
-            fun generateCell()
+        fun generateCell()
+        fun checkCell(cells: List<Cell>)
     }
 }

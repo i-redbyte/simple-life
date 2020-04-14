@@ -48,10 +48,22 @@ class LifeActivity : BaseActivity<LifeContract.Presenter>(), LifeContract.View {
             .inject(this)
     }
 
-    override fun addCell(cell: Cell) {
-        val list = adapter.items.toMutableList()
-        list.add(cell)
-        adapter.setItems(list, DelegationAdapter.Payload.UPDATE)
+    override fun addCellAndCheck(cell: Cell) {
+        val cells = adapter.items.toMutableList()
+        cells.add(cell)
+        adapter.setItems(cells, DelegationAdapter.Payload.UPDATE)
+        presenter.checkCell(cells.map { it as Cell })
+        scrollToEnd()
+    }
+
+    override fun showCells(cells: List<Cell>) {
+        adapter.setItems(cells, DelegationAdapter.Payload.UPDATE)
+        scrollToEnd()
+    }
+
+    private fun scrollToEnd() {
+        val pos = rvLive.adapter?.itemCount ?: 0
+        rvLive.smoothScrollToPosition(pos - 1)
     }
 
     override fun showError(message: String) {
